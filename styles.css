@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-b
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -24,6 +24,7 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .links {
@@ -44,13 +45,13 @@ a {
     padding: 50px;
     display: flex;
     background: #1F2937;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 .hero-left {
-    flex: auto;
     display: flex;
     flex-direction: column;
 }
@@ -63,6 +64,8 @@ a {
 .hero-left p {
     font-size: 18px;
     color: #E5E7EB;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-left button {
@@ -71,13 +74,105 @@ a {
     color: #E5E7EB;
     border-radius: 10px;
     padding: 5px 20px;
+    max-width: 170px;
 }
  
-.hero-picture {
-    display: flex;
-    background-color: gray;
+.hero-picture .picture {
     min-height: 250px;
-    min-width: 450px;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Info-block */
+.info-block {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #F9FAF8;
     justify-content: center;
     align-items: center;
+}
+
+.info-block h2 {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.card img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    text-align: center;
+}
+
+/* Quote-block */
+.quote {
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    gap: 15px;
+}
+
+.quote .name {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Call-to-action */
+
+.call-to-action {
+    background-color: #F9FAF8;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action .container {
+    background-color: #3882F6;
+    padding: 0 40px;
+    margin: 30px 100px;
+    min-height: 100px;
+    flex: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.call-to-action .call-button {
+    background-color: #3882F6;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E5E7EB;
+    border-radius: 10px;
+    border-color: #E5E7EB;
+    padding: 5px 20px;
+    max-width: 170px;
+}
+
+/* Footer */
+.footer {
+    background: #1F2937;
+    text-align: center;
+    padding: 30px;
+    color: #E5E7EB;
 }
